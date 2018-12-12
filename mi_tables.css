@@ -14,6 +14,7 @@
 */
 
 /* Table Styles */
+/* This adds a gray border around the table and adds a linear gradient */
 table {
     background: -moz-linear-gradient(to bottom, rgb(190, 215, 255), black);
     background: -webkit-linear-gradient(to bottom, rgb(190, 215, 255), black);
@@ -43,6 +44,7 @@ table td {
 
 
 /* Column Styles */
+/* This icreases the width */
 col#firstCol {
     width: 24%;
 }
@@ -52,6 +54,16 @@ col.dataCol {
 }
 
 /* Table Header Styles */
-thead {
+/* This changes the color and background for the header of the table and font size. */
+thead tr {
     height: 60px;
+}
+
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+thead tr:first-of-type th:not(:first-of-type) {
+    background: transparent;
+    color: black;
 }
